@@ -1,0 +1,44 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	font-family:Arial, Helvetiva;
+	background-color:#FF00FF;
+}
+
+header {
+	background-color:#FF1493;
+	padding:30px;
+	text-align:center;
+	font-size:35px;
+	color:white;
+}
+
+nav {
+	float:left;
+	width:30%;
+	background-color:#DCDCDC;
+	padding:20px;
+}
+
+nav ul{
+	list-style-type:none;
+	padding:0;
+}
+
+article{
+	float:left;
+	padding:20px;
+	width:70%;
+	background-color:red;
+	min-height:300px;
+}
+
+footer {
+	background-color:black;
+	padding:10px;
+	text-align:center;
+	color:white;
+	min-height:300px;
+}
