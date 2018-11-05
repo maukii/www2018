@@ -1,44 +1,129 @@
-* {
-	box-sizing:border-box;
+body
+{
+	background-color: #222222;
 }
 
-body {
-	font-family:Arial, Helvetiva;
-	background-color:#FF00FF;
+#List
+{
+	font-family: verdana;
+    	font-size: 200%;
+	top: 0px;
+	right: 0px;
+	width:0px;
+	bottom:-2px;
+	position: absolute;
+	background-color: #880000;
+	padding-left:320px ;	
 }
 
-header {
-	background-color:#FF1493;
-	padding:30px;
-	text-align:center;
-	font-size:35px;
-	color:white;
+#Header
+{
+	font-family: verdana;
+    	font-size: 200%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #333333;
+	text-align : Center;
+	color: #bbbbbb;
 }
 
-nav {
-	float:left;
-	width:30%;
-	background-color:#DCDCDC;
-	padding:20px;
+#Left
+{
+	position:absolute;
+	height:100%;
+	width:50%;
+	left:0%;
 }
 
-nav ul{
-	list-style-type:none;
-	padding:0;
+#Right
+{
+	position:absolute;
+	height:100%;
+	width:50%;
+	right:0%;
 }
 
-article{
-	float:left;
-	padding:20px;
-	width:70%;
-	background-color:red;
-	min-height:300px;
+form
+{
+	color: #bbbbbb;
+	font-family: verdana;
 }
 
-footer {
-	background-color:black;
-	padding:10px;
-	text-align:center;
-	color:white;
-	min-height:300px;
+#table{
+	width:100%;
+	color: #bbbbbb;
+	font-family: verdana;
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+#table th
+{
+	border: 1px solid black;
+	border-collapse:collapse;
+	padding: 15px;
+}
+
+#table td
+{
+	border: 1px solid black;
+	padding: 15px;
+	border-collapse:collapse;
+}
+
+#table tr:nth-child(even) 
+{
+    	background-color: #2a2a2a;
+}
+
+#table tr:nth-child(odd) 
+{
+    	background-color: #222222;
+}
+
+#table th 
+{
+    	color: #bbbbbb;
+    	background-color:#333333;
+}
+
+ul
+{
+    	list-style-type: none;
+    	margin: 0;
+    	padding:0px;
+	width:300px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom:0%;
+    	background-color: #2a2a2a;
+}
+
+li 
+{
+    	display: block;
+    	color: #bbbbbb;
+    	text-align: left;
+	font-size: 90%;
+    	text-decoration: none;
+	padding-bottom:30px ;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+li a
+{
+	font-size: 80%;
+    	display: block;
+    	color: #888888;
+    	text-align: left;
+    	text-decoration: none;
+}
+
+li a:hover 
+{
+    	background-color: #111111;
 }
