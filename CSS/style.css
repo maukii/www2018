@@ -31,21 +31,21 @@ body
 
 nav
 {
-    overflow: hidden;
-	background-color: #556B2F;
+    overflow: visible;
+	background-color: #800000;
 }
 
 nav ul
 {	float: left;
     display: block;
-	color: #ADFF2F;
+	color: #a65959;
     text-align: center;
     padding: 14px 16px;
 }
 
 nav ul:hover
 {
-	color: #000000;
+	color: #996666;
 	background-color: #ADFF2F;
 }
 
