@@ -29,6 +29,26 @@ body
 	color: #bbbbbb;
 }
 
+nav
+{
+    overflow: hidden;
+	background-color: #556B2F;
+}
+
+nav ul
+{	float: left;
+    display: block;
+	color: #ADFF2F;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav ul:hover
+{
+	color: #000000;
+	background-color: #ADFF2F;
+}
+
 #Left
 {
 	position:absolute;
