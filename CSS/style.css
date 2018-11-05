@@ -1,12 +1,12 @@
 body
 {
-	background-color: #222222;
+	background-color: #00FF00;
 }
 
 #List
 {
 	font-family: verdana;
-    	font-size: 200%;
+	font-size: 150%;
 	top: 0px;
 	right: 0px;
 	width:0px;
@@ -18,8 +18,8 @@ body
 
 #Header
 {
-	font-family: verdana;
-    	font-size: 200%;
+	font-family: Arial black;
+	font-size: 200%;
 	position: absolute;
 	top: 0px;
 	left: 0px;
