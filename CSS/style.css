@@ -1,6 +1,6 @@
 body
 {
-	background-color: #gray;
+	background-color: #808080;
 }
 
 #List
@@ -24,7 +24,7 @@ body
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: #ff0000;
+	background-color: #1a0000;
 	text-align : Center;
 	color: #bbbbbb;
 }
