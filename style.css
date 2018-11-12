@@ -3,9 +3,80 @@
 	 padding: 0;
 }
 
+.navmenu {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: #55d6aa;
+	height: 70px;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	padding-top: 10px;
+	height: 50px;
+}
+
+nav {
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+
+	position: relative;
+}
+
+nav a {
+	color: #888;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
 body {
-	background-color: rgb(45,45,45);
-	font-family: arial;
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
 
 h1, h2, p, li {
@@ -25,16 +96,6 @@ p {
 	background: #666;
 	color: white;
 	padding: 10px 10px 0px 0px;
-}
-
-.box {
-	background-image: url(dab_patrick.png);
-	padding: 200px 100px;
-	margin: 100px;
-	
-	background-repeat: no-repeat;
-	background-position: center;
-
 }
 
 .login-page {
@@ -76,8 +137,36 @@ p {
 	cursor: pointer;
 }
 
+.fill {
+	background-image: url(handsome.png);
+	position: relative;
+	height: 281px;
+	width: 263px;
+	left: 5px;
+	cursor: pointer;
+}
 
+.empty {
+	display: inline-block;
+	height: 291px;
+	width: 273px;
+	margin: 10px;
+	border: 3px salmon solid;
+	background-color: white;
+}
 
+.hold {
+	border: solid #ccc 4px;
+}
+
+.hover {
+	background: #f4f4f4;
+	border-style: dashed;
+}
+
+.invisible {
+	display: none;
+}
 
 
 

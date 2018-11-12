@@ -7,30 +7,66 @@
 </head>
 <body>
 
-	<h1><p><center>Form</center></p></h1>
-
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="images.html">Images</a></li>
-		<li><a href="video.html">Video</a></li>
-		<li><a href="table.html">Table</a></li>
-		<li>Form</li>
-		<li><a href="list.html">List</a></li>
-	</ul>
+	<header>
+		<div class="navmenu">
+		
+		<img src="logo.png" alt="logo" class="logo">
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="images.html">Images</a></li>
+					<li><a href="video.html">Video</a></li>
+					<li><a href="table.html">Table</a></li>
+					<li>Form</li>
+					<li><a href="list.html">List</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li><a href="drag&drop.html">Drag&drop</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	
 	<div class="login-page">
 	<div class="form">
-		<form class="register-form">
-		<input type="text" placeholder="username"/>
-		<input type="text" placeholder="password"/>
-		<input type="text" placeholder="email"/>
-		<button>Create</button>		
-		<p class="message">Not Registered? <a href="#">Register</a></p>
-		</form>
-		
+		<form class="register-form" action="secret.html" method="post" onsubmit="return validation();">
+			<input type="text" placeholder="username" id="name" required/>
+			<input type="password" placeholder="password" id="password" required/>
+			<input type="text" placeholder="email" id="email" required/>
+			<button name="Submit" type="submit" id="contact-submit" data-submit="...sending">Submit</button>	
+		</form>		
+		<div id="eresult" style="color:red;"></div>
 	</div>
 	</div>
 	
+	<script type="text/javascript"> 
+	function validation() {
+		var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var password = document.getElementById('password').value;
+		
+		if(name=='' || password=='' || email=='')
+		{
+			document.getElementById("eresult").innerHTML = "All fields required";
+			return false;
+		}
+		else if(name.length < 4)
+		{
+			document.getElementById("eresult").innerHTML = "Name must have atleast 4 characters";
+			return false;
+		}
+		else if(password.length < 4)
+		{
+			document.getElementById("eresult").innerHTML = "Password must have atleast 4 characters";
+			return false;
+		}
+		else
+		{
+			document.getElementById("eresult").innerHTML = "Account created";
+			return true;
+		}
+	}
+	</script>
 	
 </body>
 </html>
