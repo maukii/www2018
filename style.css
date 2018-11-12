@@ -13,6 +13,12 @@ header {
 	height: 70px;
 }
 
+.gif {
+	width: 1900px;
+	height: 860px;
+	padding: 2px;
+}
+
 header::after {
 	content: '';
 	display: table;
